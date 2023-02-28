@@ -76,7 +76,7 @@ Now it is time to explain you each file's role:
 
 
 
-## Build and test (7 points)
+## Build and test
 
 POZOS will give you information to build the API container
 
@@ -133,7 +133,7 @@ Run this command to make sure that the API correctly responding (take a screensh
 
 **Congratulation! Now you are ready for the next step (docker-compose.yml)**
 
-## Infrastructure As Code (5 points)
+## Infrastructure As Code
 
 After testing your API image, you need to put all together and deploy it, using docker-compose.
 
@@ -159,7 +159,7 @@ Finally, reach your website and click on the bouton "List Student"
 
 **If the list of the student appears, you are successfully dockerizing the POZOS application! Congratulation (make a screenshot)**
 
-## Docker Registry (4 points)
+## Docker Registry
 
 POZOS need you to deploy a private registry and store the built images
 
