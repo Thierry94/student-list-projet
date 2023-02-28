@@ -1,0 +1,50 @@
+version: '3.1'
+services:
+  ihm:
+    image: php:apache 
+    depends_on:
+      - api
+    ports:
+      - "80:80"
+    environment:
+    - USERNAME=toto
+    - PASSWORD=python
+    volumes:
+      - ./website:/var/www/html
+    networks:
+      - thierry-networks
+  
+  api:
+    image: student-age:v1
+    volumes:
+      - ./simple_api/student_age.json:/data/student_age.json
+    ports:
+      - "8500:5000"
+    container_name: api-student
+    networks:
+      - thierry-networks
+  
+  registry:
+    image: registry:2
+    ports:
+      - "5000:5000"
+    container_name: registry
+    networks:
+      - thierry-networks
+
+  registry-ihm:
+    depends_on:
+      - registry
+    image: joxit/docker-registry-ui
+    ports:
+      - "8000:80"
+    container_name: registry-ihm
+    environment:
+      - REGISTRY_TITLE="ULRICH REGISTRY"
+      - REGISTRY_URL="http://127.0.0.1:5000"
+    networks:
+      - thierry-networks
+
+
+networks:
+  thierry-networks:
