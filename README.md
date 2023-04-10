@@ -121,16 +121,6 @@ Run this command to make sure that the API correctly responding (take a screensh
 
 `curl -u toto:python -X GET http://<host IP>:<API exposed port>/pozos/api/v1.0/get_student_ages`
 
-**docker file:**
-  FROM python:2.7-stretch
-  MAINTAINER thierryngankoue (e.......@gmail.com)
-  RUN apt-get update -y && apt-get install python-dev python3-dev libsasl2-dev python-dev libldap2-dev libssl-dev -y
-  RUN pip install flask==1.1.2 flask_httpauth==4.1.0 flask_simpleldap python-dotenv==0.14.0
-  COPY student_age.py /
-  VOLUME ["/data"]
-  EXPOSE 5000
-  CMD [ "python", "./student_age.py" ]
-
 **Congratulation! Now you are ready for the next step (docker-compose.yml)**
 
 ## Infrastructure As Code
@@ -172,19 +162,16 @@ Or you can use [Portus](http://port.us.org/ "Portus") to run both
 
 Don't forget to push your image on your private registry and show them in your delivery.
 
-## Delivery (4 points)
+## Delivery 
 
-Your delivery must be zip named firstname.zip (replace firstname by your own) that contain:
+Part 1: Build and test
 
-- A doc or PDF file with your screenshots and explanations.
-- Configuration files used to realize the graded exercise (docker-compose.yml and Dockerfile).
-
-Your delivery will be evaluated on:
-
-- Explanations quality
-- Screenshots quality (relevance, visibility)
-- Presentation quality
-
-Send your delivery at ***eazytrainingfr@gmail.com*** and we will provide you the link of the solution.
-
-![good luck](https://user-images.githubusercontent.com/18481009/84582398-cad38100-adeb-11ea-95e3-2a9d4c0d5437.gif)
+**docker file:**
+  FROM python:2.7-stretch
+  MAINTAINER thierryngankoue (e.......@gmail.com)
+  RUN apt-get update -y && apt-get install python-dev python3-dev libsasl2-dev python-dev libldap2-dev libssl-dev -y
+  RUN pip install flask==1.1.2 flask_httpauth==4.1.0 flask_simpleldap python-dotenv==0.14.0
+  COPY student_age.py /
+  VOLUME ["/data"]
+  EXPOSE 5000
+  CMD [ "python", "./student_age.py" ]
