@@ -187,5 +187,13 @@ Part 1: Build and test
 
 **Infranstructure as code**
 
-Use Docker compose to automate the deployment of container
-Use Network bridge for connect container and connect with outdoor network
+. Use Docker compose to automate the deployment of container.
+
+![docker_compose](https://user-images.githubusercontent.com/65724356/230916384-23a47284-61ac-499b-bd7d-83503c894cfc.png)
+
+. Use Network bridge for connect container and connect with outdoor network
+
+. IHM
+
+![ihm](https://user-images.githubusercontent.com/65724356/230916538-1f687ba6-4fec-4e3b-8d0c-5b295697546e.png)
+
