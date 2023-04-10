@@ -166,6 +166,8 @@ Don't forget to push your image on your private registry and show them in your d
 
 Part 1: Build and test
 
+![build_image_docker](https://user-images.githubusercontent.com/65724356/230882328-0a8dcd5b-4280-4bb7-8c08-906f4c1f073d.png)
+
 **docker file:**
   - FROM python:2.7-stretch
   - MAINTAINER thierryngankoue (e.......@gmail.com)
