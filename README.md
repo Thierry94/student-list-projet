@@ -175,3 +175,8 @@ Part 1: Build and test
   - VOLUME ["/data"]
   - EXPOSE 5000
   - CMD [ "python", "./student_age.py" ]
+  
+  Test application with curl (`curl -u toto:python -X GET http://<host IP>:<API exposed port>/pozos/api/v1.0/get_student_ages`)
+
+
+**Infranstructure as code**
