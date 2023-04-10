@@ -197,3 +197,6 @@ Part 1: Build and test
 
 ![ihm](https://user-images.githubusercontent.com/65724356/230916538-1f687ba6-4fec-4e3b-8d0c-5b295697546e.png)
 
+**Docker Registry**
+
+![regstri](https://user-images.githubusercontent.com/65724356/230919077-3af03e39-725e-4e2d-b6a0-3092ddff41bc.png)
