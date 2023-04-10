@@ -164,9 +164,9 @@ Don't forget to push your image on your private registry and show them in your d
 
 ## Delivery 
 
-Part 1: Build and test
+![mini_projet_docker](https://user-images.githubusercontent.com/65724356/230882872-aa7081af-76c1-4efd-b3e4-f30cf9034378.png)
 
-![build_image_docker](https://user-images.githubusercontent.com/65724356/230882328-0a8dcd5b-4280-4bb7-8c08-906f4c1f073d.png)
+Part 1: Build and test
 
 **docker file:**
   - FROM python:2.7-stretch
@@ -177,8 +177,12 @@ Part 1: Build and test
   - VOLUME ["/data"]
   - EXPOSE 5000
   - CMD [ "python", "./student_age.py" ]
+
+![build_image_docker](https://user-images.githubusercontent.com/65724356/230882328-0a8dcd5b-4280-4bb7-8c08-906f4c1f073d.png)
   
   Test application with curl (`curl -u toto:python -X GET http://<host IP>:<API exposed port>/pozos/api/v1.0/get_student_ages`)
+  
+  ![test](https://user-images.githubusercontent.com/65724356/230882806-3b2c556b-1493-4a29-8b36-596e0ca6b8f9.png)
 
 
 **Infranstructure as code**
