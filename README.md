@@ -186,3 +186,6 @@ Part 1: Build and test
 
 
 **Infranstructure as code**
+
+Use Docker compose to automate the deployment of container
+Use Network bridge for connect container and connect with outdoor network
