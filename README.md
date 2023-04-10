@@ -167,8 +167,8 @@ Don't forget to push your image on your private registry and show them in your d
 Part 1: Build and test
 
 **docker file:**
-  FROM python:2.7-stretch
-  MAINTAINER thierryngankoue (e.......@gmail.com)
+  - FROM python:2.7-stretch
+  - MAINTAINER thierryngankoue (e.......@gmail.com)
   RUN apt-get update -y && apt-get install python-dev python3-dev libsasl2-dev python-dev libldap2-dev libssl-dev -y
   RUN pip install flask==1.1.2 flask_httpauth==4.1.0 flask_simpleldap python-dotenv==0.14.0
   COPY student_age.py /
