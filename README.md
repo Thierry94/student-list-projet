@@ -187,6 +187,8 @@ Part 1: Build and test
 
 **Infranstructure as code**
 
+Iac: is a set of mechanisms for managing a virtual infrastructure.
+
 . Use Docker compose to automate the deployment of container.
 
 ![docker_compose](https://user-images.githubusercontent.com/65724356/230916384-23a47284-61ac-499b-bd7d-83503c894cfc.png)
